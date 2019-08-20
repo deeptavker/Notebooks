@@ -1,0 +1,53 @@
+INFO|2019-08-20 15:31:26,252|pysph.solver.application|Running on Apples-MacBook-Air.local with address Apples-MacBook-Air.local
+INFO|2019-08-20 15:31:26,327|pysph.solver.application|Generating output in /Users/apple/notebooks/Notebooks/__main___output
+INFO|2019-08-20 15:31:37,220|pysph.solver.application|No of particles:
+----------------------------------------------------------------------
+  fluid: 5025
+----------------------------------------------------------------------
+INFO|2019-08-20 15:31:37,221|pysph.solver.application|Using kernel:
+----------------------------------------------------------------------
+  CubicSpline(dim=2)
+----------------------------------------------------------------------
+INFO|2019-08-20 15:31:37,221|pysph.solver.application|Using nnps:
+----------------------------------------------------------------------
+  LinkedListNNPS(dim=2)
+----------------------------------------------------------------------
+INFO|2019-08-20 15:31:37,221|pysph.solver.application|Using integrator:
+----------------------------------------------------------------------
+  PECIntegrator(fluid=WCSPHStep())
+----------------------------------------------------------------------
+INFO|2019-08-20 15:31:37,222|pysph.solver.application|Using equations:
+----------------------------------------------------------------------
+[
+Group(equations=[
+TaitEOS(dest='fluid', sources=None, rho0=1.0, c0=1400.0, gamma=7.0, p0=0.0)
+    ],
+    real=False, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None),
+Group(equations=[
+ContinuityEquation(dest='fluid', sources=['fluid']),
+MomentumEquation(dest='fluid', sources=['fluid'], c0=1400.0, alpha=0.1, beta=0.0, gx=0.0, gy=0.0, gz=0.0, tensile_correction=False),
+XSPHCorrection(dest='fluid', sources=['fluid'], eps=0.5)
+    ],
+    real=True, update_nnps=False, iterate=False, max_iterations=1, min_iterations=0, pre=None, post=None)
+]
+----------------------------------------------------------------------
+INFO|2019-08-20 15:31:37,289|pysph.solver.application|started multiprocessing interface on ('0.0.0.0', 8800)
+INFO|2019-08-20 15:31:37,289|pysph.solver.application|Setup took: 16.04295 secs
+INFO|2019-08-20 15:31:37,291|pysph.solver.solver|Writing output at time 0, iteration 0, dt = 5e-06
+INFO|2019-08-20 15:31:38,443|pysph.solver.solver|Writing output at time 0.0005, iteration 100, dt = 5e-06
+INFO|2019-08-20 15:31:39,565|pysph.solver.solver|Writing output at time 0.001, iteration 200, dt = 5e-06
+INFO|2019-08-20 15:31:40,695|pysph.solver.solver|Writing output at time 0.0015, iteration 300, dt = 5e-06
+INFO|2019-08-20 15:31:41,885|pysph.solver.solver|Writing output at time 0.002, iteration 400, dt = 5e-06
+INFO|2019-08-20 15:31:43,005|pysph.solver.solver|Writing output at time 0.0025, iteration 500, dt = 5e-06
+INFO|2019-08-20 15:31:44,051|pysph.solver.solver|Writing output at time 0.003, iteration 600, dt = 5e-06
+INFO|2019-08-20 15:31:45,164|pysph.solver.solver|Writing output at time 0.0035, iteration 700, dt = 5e-06
+INFO|2019-08-20 15:31:46,282|pysph.solver.solver|Writing output at time 0.004, iteration 800, dt = 5e-06
+INFO|2019-08-20 15:31:47,393|pysph.solver.solver|Writing output at time 0.0045, iteration 900, dt = 5e-06
+INFO|2019-08-20 15:31:48,492|pysph.solver.solver|Writing output at time 0.005, iteration 1000, dt = 5e-06
+INFO|2019-08-20 15:31:49,626|pysph.solver.solver|Writing output at time 0.0055, iteration 1100, dt = 5e-06
+INFO|2019-08-20 15:31:50,733|pysph.solver.solver|Writing output at time 0.006, iteration 1200, dt = 5e-06
+INFO|2019-08-20 15:31:51,900|pysph.solver.solver|Writing output at time 0.0065, iteration 1300, dt = 5e-06
+INFO|2019-08-20 15:31:53,132|pysph.solver.solver|Writing output at time 0.007, iteration 1400, dt = 5e-06
+INFO|2019-08-20 15:31:54,298|pysph.solver.solver|Writing output at time 0.0075, iteration 1500, dt = 5e-06
+INFO|2019-08-20 15:31:54,550|pysph.solver.solver|Writing output at time 0.0076, iteration 1520, dt = 5e-06
+INFO|2019-08-20 15:31:54,562|pysph.solver.application|Run took: 17.27203 secs
