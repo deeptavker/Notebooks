@@ -1,3 +1,4 @@
-# Notebooks
-A collection of Jupyter notebooks
-Ping
+A collection of jupyter notebooks
+
+- pysph_sims_1.x -> basic simulations using pysph
+
